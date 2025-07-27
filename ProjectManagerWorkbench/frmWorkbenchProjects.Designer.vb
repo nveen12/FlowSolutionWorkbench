@@ -99,6 +99,7 @@ Partial Class frmWorkbenchProjects
         Me.sc2 = New System.Windows.Forms.SplitContainer()
         Me.lblDemandView = New System.Windows.Forms.Label()
         Me.lblShortageDescription = New System.Windows.Forms.Label()
+        Me.lblNoSupplyDemandData = New System.Windows.Forms.Label()
         Me.dgvShortages = New System.Windows.Forms.DataGridView()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
         Me.dgvFurtherDetails = New System.Windows.Forms.DataGridView()
@@ -676,6 +677,7 @@ Partial Class frmWorkbenchProjects
         '
         Me.sc2.Panel1.Controls.Add(Me.lblDemandView)
         Me.sc2.Panel1.Controls.Add(Me.lblShortageDescription)
+        Me.sc2.Panel1.Controls.Add(Me.lblNoSupplyDemandData)
         Me.sc2.Panel1.Controls.Add(Me.dgvShortages)
         '
         'sc2.Panel2
@@ -708,6 +710,15 @@ Partial Class frmWorkbenchProjects
         Me.lblShortageDescription.Name = "lblShortageDescription"
         Me.lblShortageDescription.Size = New System.Drawing.Size(0, 13)
         Me.lblShortageDescription.TabIndex = 1
+
+        'lblNoSupplyDemandData
+        '
+        Me.lblNoSupplyDemandData.AutoSize = True
+        Me.lblNoSupplyDemandData.Location = New System.Drawing.Point(3, 20)
+        Me.lblNoSupplyDemandData.Name = "lblNoSupplyDemandData"
+        Me.lblNoSupplyDemandData.Size = New System.Drawing.Size(0, 13)
+        Me.lblNoSupplyDemandData.TabIndex = 3
+        Me.lblNoSupplyDemandData.Visible = False
         '
         'dgvShortages
         '
@@ -1392,6 +1403,7 @@ Partial Class frmWorkbenchProjects
     Friend WithEvents ResetColumnWidthToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OrderToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents lblShortageDescription As System.Windows.Forms.Label
+    Friend WithEvents lblNoSupplyDemandData As System.Windows.Forms.Label
     Friend WithEvents lblDemandView As System.Windows.Forms.Label
     Friend WithEvents YourActualInvolvementToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents lblOccurances As System.Windows.Forms.Label
