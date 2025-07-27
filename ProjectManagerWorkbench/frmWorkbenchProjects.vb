@@ -589,6 +589,7 @@ Public Class frmWorkbenchProjects
                 lblNoSupplyDemandData.Visible = True
             Else
                 lblNoSupplyDemandData.Visible = False
+                lblNoSupplyDemandData.Text = String.Empty
                 dgvShortages.Visible = True
             End If
 
