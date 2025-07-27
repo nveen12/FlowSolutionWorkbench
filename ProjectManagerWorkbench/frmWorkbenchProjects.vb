@@ -583,6 +583,15 @@ Public Class frmWorkbenchProjects
             'Me.calculateRunningNumberForSupplyDemand(dsMRPShortages, dgvShortages, True)
             'gridDisplay.formatGrid(dgvShortages, "")
 
+            If dsMRPShortages.Tables(0).Rows.Count = 0 Then
+                dgvShortages.Visible = False
+                lblNoSupplyDemandData.Text = "No supply or demand data found for this part"
+                lblNoSupplyDemandData.Visible = True
+            Else
+                lblNoSupplyDemandData.Visible = False
+                dgvShortages.Visible = True
+            End If
+
             lblShortageDescription.Text = "Supply & Demand For Part: " & itemNo & ControlChars.Tab & "    "
             'Starting On Hand Quantity:" & quantityOnHand.ToString & ControlChars.Tab & _
             '"   Ending On Hand Quantity:" & runningQuantity.ToString
@@ -702,8 +711,12 @@ Public Class frmWorkbenchProjects
         End If
 
         'Creating the label header of the supply and demand view.
-        lblShortageDescription.Text = "Supply & Demand For Part: " & strPart & ControlChars.Tab & "    Starting On Hand Quantity:" & quantityOnHand.ToString & ControlChars.Tab & _
-        "   Ending On Hand Quantity:" & runningQuantity.ToString
+        If ds.Tables(0).Rows.Count > 0 Then
+            lblShortageDescription.Text = "Supply & Demand For Part: " & strPart & ControlChars.Tab & "    Starting On Hand Quantity:" & quantityOnHand.ToString & ControlChars.Tab & _
+            "   Ending On Hand Quantity:" & runningQuantity.ToString
+        Else
+            lblShortageDescription.Text = "Supply & Demand For Part:"
+        End If
 
     End Sub
 
