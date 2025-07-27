@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsNafta" targetNamespace="http://tempuri.org/dsNafta.xsd" xmlns:mstns="http://tempuri.org/dsNafta.xsd" xmlns="http://tempuri.org/dsNafta.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="FLOWConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FLOWConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Flow_Solution_Workbenches.My.MySettings.GlobalReference.Default.FLOWConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FLOWConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     dbo.NAFTA.itemNo AS Item, dbo.tblWork.Text2 AS Description, dbo.tblWork.Number3 AS PurMfg, dbo.tblWork.Number2 AS QtyPer, 
+                      dbo.tblWork.Number8 AS Cost, dbo.NAFTA.vendorNo, dbo.NAFTA.tariff, dbo.NAFTA.prefCriterion AS Criteria, dbo.NAFTA.netCost, dbo.NAFTA.producer, 
+                      dbo.NAFTA.countryOfOrigin AS Country, dbo.NAFTA.NAFTAPart AS Qualify
+FROM         dbo.NAFTA INNER JOIN
+                      dbo.tblWork ON dbo.NAFTA.itemNo = dbo.tblWork.Text1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Item" DataSetColumn="Item" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="PurMfg" DataSetColumn="PurMfg" />
+              <Mapping SourceColumn="QtyPer" DataSetColumn="QtyPer" />
+              <Mapping SourceColumn="Cost" DataSetColumn="Cost" />
+              <Mapping SourceColumn="vendorNo" DataSetColumn="vendorNo" />
+              <Mapping SourceColumn="tariff" DataSetColumn="tariff" />
+              <Mapping SourceColumn="Criteria" DataSetColumn="Criteria" />
+              <Mapping SourceColumn="netCost" DataSetColumn="netCost" />
+              <Mapping SourceColumn="producer" DataSetColumn="producer" />
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+              <Mapping SourceColumn="Qualify" DataSetColumn="Qualify" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsNafta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsNafta" msprop:Generator_UserDSName="dsNafta" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TablePropName="DataTable1" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item" msprop:Generator_UserColumnName="Item" msprop:Generator_ColumnPropNameInRow="Item" msprop:Generator_ColumnVarNameInTable="columnItem" msprop:Generator_ColumnPropNameInTable="ItemColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PurMfg" msprop:Generator_UserColumnName="PurMfg" msprop:Generator_ColumnPropNameInRow="PurMfg" msprop:Generator_ColumnVarNameInTable="columnPurMfg" msprop:Generator_ColumnPropNameInTable="PurMfgColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QtyPer" msprop:Generator_UserColumnName="QtyPer" msprop:Generator_ColumnPropNameInRow="QtyPer" msprop:Generator_ColumnVarNameInTable="columnQtyPer" msprop:Generator_ColumnPropNameInTable="QtyPerColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Cost" msprop:Generator_UserColumnName="Cost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_ColumnPropNameInTable="CostColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="vendorNo" msprop:Generator_UserColumnName="vendorNo" msprop:Generator_ColumnPropNameInRow="vendorNo" msprop:Generator_ColumnVarNameInTable="columnvendorNo" msprop:Generator_ColumnPropNameInTable="vendorNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tariff" msprop:Generator_UserColumnName="tariff" msprop:Generator_ColumnPropNameInRow="tariff" msprop:Generator_ColumnVarNameInTable="columntariff" msprop:Generator_ColumnPropNameInTable="tariffColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Criteria" msprop:Generator_UserColumnName="Criteria" msprop:Generator_ColumnPropNameInRow="Criteria" msprop:Generator_ColumnVarNameInTable="columnCriteria" msprop:Generator_ColumnPropNameInTable="CriteriaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="netCost" msprop:Generator_UserColumnName="netCost" msprop:Generator_ColumnPropNameInRow="netCost" msprop:Generator_ColumnVarNameInTable="columnnetCost" msprop:Generator_ColumnPropNameInTable="netCostColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="producer" msprop:Generator_UserColumnName="producer" msprop:Generator_ColumnPropNameInRow="producer" msprop:Generator_ColumnVarNameInTable="columnproducer" msprop:Generator_ColumnPropNameInTable="producerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country" msprop:Generator_UserColumnName="Country" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInTable="CountryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qualify" msprop:Generator_UserColumnName="Qualify" msprop:Generator_ColumnPropNameInRow="Qualify" msprop:Generator_ColumnVarNameInTable="columnQualify" msprop:Generator_ColumnPropNameInTable="QualifyColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

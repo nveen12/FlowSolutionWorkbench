@@ -1,0 +1,807 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="FLOWConnectionString">
+      <rd:DataSourceID>e5a81345-8eba-4002-ae3b-400d4db855d3</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=bendrey11;Initial Catalog=FSG_IND_WORKBENCH;Persist Security Info=True;User ID=WorkBenchUser;Password=WorkBench</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>0.01in</RightMargin>
+  <LeftMargin>0.1in</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Width>2.53968cm</Width>
+        <Style>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>9.625in</Left>
+        <Value>Start Date</Value>
+      </Textbox>
+      <Textbox Name="textbox18">
+        <Width>1.5873cm</Width>
+        <Style>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>9in</Left>
+        <Value>Plan.</Value>
+      </Textbox>
+      <Textbox Name="textbox17">
+        <Width>0.75in</Width>
+        <Style>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>8.25in</Left>
+        <Value>Last Comment</Value>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <Width>1.25in</Width>
+        <Style>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7in</Left>
+        <Value>Op Description</Value>
+      </Textbox>
+      <Textbox Name="textbox13">
+        <Width>4.625in</Width>
+        <Style>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2.375in</Left>
+        <Value>Components</Value>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <Width>0.5in</Width>
+        <Style>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.875in</Left>
+        <Value>Qty Ope</Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <Width>0.75in</Width>
+        <Style>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.125in</Left>
+        <Value>Project Name</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <rd:DefaultName>textbox6</rd:DefaultName>
+        <Width>1in</Width>
+        <Style>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <BorderStyle>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.125in</Left>
+        <Value>Job</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.375in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>0.2in</BottomMargin>
+  <rd:ReportID>043eda99-a49a-4f75-bd48-08968041a01f</rd:ReportID>
+  <PageWidth>11in</PageWidth>
+  <DataSets>
+    <DataSet Name="dsWIP_WIPQueueView">
+      <Fields>
+        <Field Name="ORGANIZATION_ID">
+          <DataField>ORGANIZATION_ID</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="WIP_ENTITY_ID">
+          <DataField>WIP_ENTITY_ID</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOB_NO">
+          <DataField>JOB_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OPERATION_SEQ_NO">
+          <DataField>OPERATION_SEQ_NO</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="INVENTORY_ITEM_ID">
+          <DataField>INVENTORY_ITEM_ID</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="ITEM_NO">
+          <DataField>ITEM_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION">
+          <DataField>DESCRIPTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DATE_RELEASED">
+          <DataField>DATE_RELEASED</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CLASS_CODE">
+          <DataField>CLASS_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STATUS_TYPE">
+          <DataField>STATUS_TYPE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="START_QUANTITY_HDR">
+          <DataField>START_QUANTITY_HDR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="QUANTITY_COMPLETED_HDR">
+          <DataField>QUANTITY_COMPLETED_HDR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="QUANTITY_SCRAPPED_HDR">
+          <DataField>QUANTITY_SCRAPPED_HDR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="MEANING">
+          <DataField>MEANING</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DEPARTMENT_ID">
+          <DataField>DEPARTMENT_ID</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="DEPARTMENT_CODE">
+          <DataField>DEPARTMENT_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RESOURCE_ID">
+          <DataField>RESOURCE_ID</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="RESOURCE_CODE">
+          <DataField>RESOURCE_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RESOURCE_SEQ_NO">
+          <DataField>RESOURCE_SEQ_NO</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="DESCRIPTION_OPER">
+          <DataField>DESCRIPTION_OPER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="START_DATE">
+          <DataField>START_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="COMPLETION_DATE">
+          <DataField>COMPLETION_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RESOURCE_END_DATE">
+          <DataField>RESOURCE_END_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="USAGE_RATE_OR_AMOUNT">
+          <DataField>USAGE_RATE_OR_AMOUNT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="UOM_CODE">
+          <DataField>UOM_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SCHEDULED_QUANTITY">
+          <DataField>SCHEDULED_QUANTITY</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="QUANTITY_IN_QUEUE">
+          <DataField>QUANTITY_IN_QUEUE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="QUANTITY_SCRAPPED">
+          <DataField>QUANTITY_SCRAPPED</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="QUANTITY_COMPLETED">
+          <DataField>QUANTITY_COMPLETED</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="DATE_LAST_MOVED">
+          <DataField>DATE_LAST_MOVED</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FIRST_UNIT_START_DATE">
+          <DataField>FIRST_UNIT_START_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="LAST_UNIT_COMPLETION_DATE">
+          <DataField>LAST_UNIT_COMPLETION_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="PREVIOUS_OPERATION_SEQ_NO">
+          <DataField>PREVIOUS_OPERATION_SEQ_NO</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="NEXT_OPERATION_SEQ_NO">
+          <DataField>NEXT_OPERATION_SEQ_NO</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="BASIS_TYPE">
+          <DataField>BASIS_TYPE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="RESOURCE_TYPE">
+          <DataField>RESOURCE_TYPE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="COUNT_POINT_TYPE">
+          <DataField>COUNT_POINT_TYPE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SCHEDULED_FLAG">
+          <DataField>SCHEDULED_FLAG</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="REF_SALES_ORDER_HDR">
+          <DataField>REF_SALES_ORDER_HDR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="REF_SALES_ORDER_LINE">
+          <DataField>REF_SALES_ORDER_LINE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LAST_UPDATE_DATE_JOB">
+          <DataField>LAST_UPDATE_DATE_JOB</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SALES_ORDER_NO">
+          <DataField>SALES_ORDER_NO</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SALES_LINE_NO">
+          <DataField>SALES_LINE_NO</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PARTY_NAME">
+          <DataField>PARTY_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MRP_DATE">
+          <DataField>MRP_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FIRST_OPEN_SEQ">
+          <DataField>FIRST_OPEN_SEQ</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="QUANTITY_OPEN">
+          <DataField>QUANTITY_OPEN</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="HOURS_OPEN">
+          <DataField>HOURS_OPEN</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TEMP">
+          <DataField>TEMP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CREATED_BY">
+          <DataField>CREATED_BY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CREATION_DATE">
+          <DataField>CREATION_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="LAST_UPDATED_BY">
+          <DataField>LAST_UPDATED_BY</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="LAST_UPDATE_DATE">
+          <DataField>LAST_UPDATE_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="LAST_UPDATE_LOGIN">
+          <DataField>LAST_UPDATE_LOGIN</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="lastComment">
+          <DataField>lastComment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JobNoOperationSeq">
+          <DataField>JobNoOperationSeq</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SalesOrderLine">
+          <DataField>SalesOrderLine</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DRAWING">
+          <DataField>DRAWING</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PROJECT_ID">
+          <DataField>PROJECT_ID</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PROJECT_NUMBER">
+          <DataField>PROJECT_NUMBER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PROJECT_NAME">
+          <DataField>PROJECT_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FSG_MATERIAL_CODE">
+          <DataField>FSG_MATERIAL_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="END_DEMAND_ID">
+          <DataField>END_DEMAND_ID</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="firstPeggingId">
+          <DataField>firstPeggingId</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="qtyAvailable">
+          <DataField>qtyAvailable</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="neededBy">
+          <DataField>neededBy</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Usage12Month">
+          <DataField>Usage12Month</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Usage6Month">
+          <DataField>Usage6Month</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Usage3Month">
+          <DataField>Usage3Month</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="AverageLast10days">
+          <DataField>AverageLast10days</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="QtyTotalDemand">
+          <DataField>QtyTotalDemand</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PLANNER_CODE">
+          <DataField>PLANNER_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="operationSequenceIndicator">
+          <DataField>operationSequenceIndicator</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="componentRequirements">
+          <DataField>componentRequirements</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SAFETY_STOCK_QUANTITY">
+          <DataField>SAFETY_STOCK_QUANTITY</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="FSG_PRODUCT_CODE">
+          <DataField>FSG_PRODUCT_CODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>FLOWConnectionString</DataSourceName>
+        <CommandText>SELECT  [ORGANIZATION_ID]
+      ,[WIP_ENTITY_ID]
+      ,[JOB_NO]
+      ,[OPERATION_SEQ_NO]
+      ,[INVENTORY_ITEM_ID]
+      ,[ITEM_NO]
+      ,[DESCRIPTION]
+      ,[DATE_RELEASED]
+      ,[CLASS_CODE]
+      ,[STATUS_TYPE]
+      ,[START_QUANTITY_HDR]
+      ,[QUANTITY_COMPLETED_HDR]
+      ,[QUANTITY_SCRAPPED_HDR]
+      ,[MEANING]
+      ,[DEPARTMENT_ID]
+      ,[DEPARTMENT_CODE]
+      ,[RESOURCE_ID]
+      ,[RESOURCE_CODE]
+      ,[RESOURCE_SEQ_NO]
+      ,[DESCRIPTION_OPER]
+      ,[START_DATE]
+      ,[COMPLETION_DATE]
+      ,[RESOURCE_END_DATE]
+      ,[USAGE_RATE_OR_AMOUNT]
+      ,[UOM_CODE]
+      ,[SCHEDULED_QUANTITY]
+      ,[QUANTITY_IN_QUEUE]
+      ,[QUANTITY_SCRAPPED]
+      ,[QUANTITY_COMPLETED]
+      ,[DATE_LAST_MOVED]
+      ,[FIRST_UNIT_START_DATE]
+      ,[LAST_UNIT_COMPLETION_DATE]
+      ,[PREVIOUS_OPERATION_SEQ_NO]
+      ,[NEXT_OPERATION_SEQ_NO]
+      ,[BASIS_TYPE]
+      ,[RESOURCE_TYPE]
+      ,[COUNT_POINT_TYPE]
+      ,[SCHEDULED_FLAG]
+      ,[REF_SALES_ORDER_HDR]
+      ,[REF_SALES_ORDER_LINE]
+      ,[LAST_UPDATE_DATE_JOB]
+      ,[SALES_ORDER_NO]
+      ,[SALES_LINE_NO]
+      ,[PARTY_NAME]
+      ,[MRP_DATE]
+      ,[FIRST_OPEN_SEQ]
+      ,[QUANTITY_OPEN]
+      ,[HOURS_OPEN]
+      ,[TEMP]
+      ,[CREATED_BY]
+      ,[CREATION_DATE]
+      ,[LAST_UPDATED_BY]
+      ,[LAST_UPDATE_DATE]
+      ,[LAST_UPDATE_LOGIN]
+      ,[lastComment]
+      ,[JobNoOperationSeq]
+      ,[SalesOrderLine]
+      ,[DRAWING]
+      ,[PROJECT_ID]
+      ,[PROJECT_NUMBER]
+      ,[PROJECT_NAME]
+      ,[FSG_MATERIAL_CODE]
+      ,[END_DEMAND_ID]
+      ,[firstPeggingId]
+      ,[qtyAvailable]
+      ,[neededBy]
+      ,[Usage12Month]
+      ,[Usage6Month]
+      ,[Usage3Month]
+      ,[AverageLast10days]
+      ,[QtyTotalDemand]
+      ,[PLANNER_CODE]
+      ,[operationSequenceIndicator]
+      ,[componentRequirements]
+      ,[SAFETY_STOCK_QUANTITY]
+      ,[FSG_PRODUCT_CODE]
+  FROM [WIPQueueView]</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsWIP</rd:DataSetName>
+        <rd:TableName>WIPQueueView</rd:TableName>
+        <rd:TableAdapterName>WIPQueueViewTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>10.75in</Width>
+  <Body>
+    <ReportItems>
+      <Table Name="table1">
+        <DataSetName>dsWIP_WIPQueueView</DataSetName>
+        <PageBreakAtStart>true</PageBreakAtStart>
+        <Width>26.66667cm</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="JobNoOperationSeq">
+                      <rd:DefaultName>JobNoOperationSeq</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!JobNoOperationSeq.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="PROJECT_NAME">
+                      <rd:DefaultName>PROJECT_NAME</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!PROJECT_NAME.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="QUANTITY_OPEN">
+                      <rd:DefaultName>QUANTITY_OPEN</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!QUANTITY_OPEN.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="componentRequirements">
+                      <rd:DefaultName>componentRequirements</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!componentRequirements.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="DESCRIPTION_OPER">
+                      <rd:DefaultName>DESCRIPTION_OPER</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!DESCRIPTION_OPER.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="lastComment">
+                      <rd:DefaultName>lastComment</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!lastComment.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="PLANNER_CODE">
+                      <rd:DefaultName>PLANNER_CODE</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!PLANNER_CODE.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="FIRST_UNIT_START_DATE">
+                      <rd:DefaultName>FIRST_UNIT_START_DATE</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <FontSize>8pt</FontSize>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!FIRST_UNIT_START_DATE.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <TableColumns>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.5in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>4.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.25in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.625in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+        </TableColumns>
+        <Left>0.125in</Left>
+      </Table>
+    </ReportItems>
+    <Height>0.25in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox47">
+        <Width>1.375in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>9.25in</Left>
+        <Value>=Format(Now(), "Short Date")</Value>
+      </Textbox>
+      <Textbox Name="textbox40">
+        <rd:DefaultName>textbox40</rd:DefaultName>
+        <Width>4.8125in</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.0625in</Left>
+        <Value>=Globals!ReportName &amp; "       Page "   &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.25in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>0.2in</TopMargin>
+  <PageHeight>8.5in</PageHeight>
+</Report>

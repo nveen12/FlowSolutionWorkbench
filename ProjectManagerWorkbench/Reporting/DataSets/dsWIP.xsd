@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsWIP" targetNamespace="http://tempuri.org/dsWIP.xsd" xmlns:mstns="http://tempuri.org/dsWIP.xsd" xmlns="http://tempuri.org/dsWIP.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="FLOWConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FLOWConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Flow_Solution_Workbenches.My.MySettings.GlobalReference.Default.FLOWConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="WIPQueueViewTableAdapter" GeneratorDataComponentClassName="WIPQueueViewTableAdapter" Name="WIPQueueView" UserDataComponentName="WIPQueueViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FLOWConnectionString (MySettings)" DbObjectName="FSG_IND_WORKBENCH.dbo.WIPQueueView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT  [ORGANIZATION_ID]
+      ,[WIP_ENTITY_ID]
+      ,[JOB_NO]
+      ,[OPERATION_SEQ_NO]
+      ,[INVENTORY_ITEM_ID]
+      ,[ITEM_NO]
+      ,[DESCRIPTION]
+      ,[DATE_RELEASED]
+      ,[CLASS_CODE]
+      ,[STATUS_TYPE]
+      ,[START_QUANTITY_HDR]
+      ,[QUANTITY_COMPLETED_HDR]
+      ,[QUANTITY_SCRAPPED_HDR]
+      ,[MEANING]
+      ,[DEPARTMENT_ID]
+      ,[DEPARTMENT_CODE]
+      ,[RESOURCE_ID]
+      ,[RESOURCE_CODE]
+      ,[RESOURCE_SEQ_NO]
+      ,[DESCRIPTION_OPER]
+      ,[START_DATE]
+      ,[COMPLETION_DATE]
+      ,[RESOURCE_END_DATE]
+      ,[USAGE_RATE_OR_AMOUNT]
+      ,[UOM_CODE]
+      ,[SCHEDULED_QUANTITY]
+      ,[QUANTITY_IN_QUEUE]
+      ,[QUANTITY_SCRAPPED]
+      ,[QUANTITY_COMPLETED]
+      ,[DATE_LAST_MOVED]
+      ,[FIRST_UNIT_START_DATE]
+      ,[LAST_UNIT_COMPLETION_DATE]
+      ,[PREVIOUS_OPERATION_SEQ_NO]
+      ,[NEXT_OPERATION_SEQ_NO]
+      ,[BASIS_TYPE]
+      ,[RESOURCE_TYPE]
+      ,[COUNT_POINT_TYPE]
+      ,[SCHEDULED_FLAG]
+      ,[REF_SALES_ORDER_HDR]
+      ,[REF_SALES_ORDER_LINE]
+      ,[LAST_UPDATE_DATE_JOB]
+      ,[SALES_ORDER_NO]
+      ,[SALES_LINE_NO]
+      ,[PARTY_NAME]
+      ,[MRP_DATE]
+      ,[FIRST_OPEN_SEQ]
+      ,[QUANTITY_OPEN]
+      ,[HOURS_OPEN]
+      ,[TEMP]
+      ,[CREATED_BY]
+      ,[CREATION_DATE]
+      ,[LAST_UPDATED_BY]
+      ,[LAST_UPDATE_DATE]
+      ,[LAST_UPDATE_LOGIN]
+      ,[lastComment]
+      ,[JobNoOperationSeq]
+      ,[SalesOrderLine]
+      ,[DRAWING]
+      ,[PROJECT_ID]
+      ,[PROJECT_NUMBER]
+      ,[PROJECT_NAME]
+      ,[FSG_MATERIAL_CODE]
+      ,[END_DEMAND_ID]
+      ,[firstPeggingId]
+      ,[qtyAvailable]
+      ,[neededBy]
+      ,[Usage12Month]
+      ,[Usage6Month]
+      ,[Usage3Month]
+      ,[AverageLast10days]
+      ,[QtyTotalDemand]
+      ,[PLANNER_CODE]
+      ,[operationSequenceIndicator]
+      ,[componentRequirements]
+      ,[SAFETY_STOCK_QUANTITY]
+      ,[FSG_PRODUCT_CODE]
+    ,no_of_purchased_shortages
+  FROM [WIPQueueView]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ORGANIZATION_ID" DataSetColumn="ORGANIZATION_ID" />
+              <Mapping SourceColumn="WIP_ENTITY_ID" DataSetColumn="WIP_ENTITY_ID" />
+              <Mapping SourceColumn="JOB_NO" DataSetColumn="JOB_NO" />
+              <Mapping SourceColumn="OPERATION_SEQ_NO" DataSetColumn="OPERATION_SEQ_NO" />
+              <Mapping SourceColumn="INVENTORY_ITEM_ID" DataSetColumn="INVENTORY_ITEM_ID" />
+              <Mapping SourceColumn="ITEM_NO" DataSetColumn="ITEM_NO" />
+              <Mapping SourceColumn="DESCRIPTION" DataSetColumn="DESCRIPTION" />
+              <Mapping SourceColumn="DATE_RELEASED" DataSetColumn="DATE_RELEASED" />
+              <Mapping SourceColumn="CLASS_CODE" DataSetColumn="CLASS_CODE" />
+              <Mapping SourceColumn="STATUS_TYPE" DataSetColumn="STATUS_TYPE" />
+              <Mapping SourceColumn="START_QUANTITY_HDR" DataSetColumn="START_QUANTITY_HDR" />
+              <Mapping SourceColumn="QUANTITY_COMPLETED_HDR" DataSetColumn="QUANTITY_COMPLETED_HDR" />
+              <Mapping SourceColumn="QUANTITY_SCRAPPED_HDR" DataSetColumn="QUANTITY_SCRAPPED_HDR" />
+              <Mapping SourceColumn="MEANING" DataSetColumn="MEANING" />
+              <Mapping SourceColumn="DEPARTMENT_ID" DataSetColumn="DEPARTMENT_ID" />
+              <Mapping SourceColumn="DEPARTMENT_CODE" DataSetColumn="DEPARTMENT_CODE" />
+              <Mapping SourceColumn="RESOURCE_ID" DataSetColumn="RESOURCE_ID" />
+              <Mapping SourceColumn="RESOURCE_CODE" DataSetColumn="RESOURCE_CODE" />
+              <Mapping SourceColumn="RESOURCE_SEQ_NO" DataSetColumn="RESOURCE_SEQ_NO" />
+              <Mapping SourceColumn="DESCRIPTION_OPER" DataSetColumn="DESCRIPTION_OPER" />
+              <Mapping SourceColumn="START_DATE" DataSetColumn="START_DATE" />
+              <Mapping SourceColumn="COMPLETION_DATE" DataSetColumn="COMPLETION_DATE" />
+              <Mapping SourceColumn="RESOURCE_END_DATE" DataSetColumn="RESOURCE_END_DATE" />
+              <Mapping SourceColumn="USAGE_RATE_OR_AMOUNT" DataSetColumn="USAGE_RATE_OR_AMOUNT" />
+              <Mapping SourceColumn="UOM_CODE" DataSetColumn="UOM_CODE" />
+              <Mapping SourceColumn="SCHEDULED_QUANTITY" DataSetColumn="SCHEDULED_QUANTITY" />
+              <Mapping SourceColumn="QUANTITY_IN_QUEUE" DataSetColumn="QUANTITY_IN_QUEUE" />
+              <Mapping SourceColumn="QUANTITY_SCRAPPED" DataSetColumn="QUANTITY_SCRAPPED" />
+              <Mapping SourceColumn="QUANTITY_COMPLETED" DataSetColumn="QUANTITY_COMPLETED" />
+              <Mapping SourceColumn="DATE_LAST_MOVED" DataSetColumn="DATE_LAST_MOVED" />
+              <Mapping SourceColumn="FIRST_UNIT_START_DATE" DataSetColumn="FIRST_UNIT_START_DATE" />
+              <Mapping SourceColumn="LAST_UNIT_COMPLETION_DATE" DataSetColumn="LAST_UNIT_COMPLETION_DATE" />
+              <Mapping SourceColumn="PREVIOUS_OPERATION_SEQ_NO" DataSetColumn="PREVIOUS_OPERATION_SEQ_NO" />
+              <Mapping SourceColumn="NEXT_OPERATION_SEQ_NO" DataSetColumn="NEXT_OPERATION_SEQ_NO" />
+              <Mapping SourceColumn="BASIS_TYPE" DataSetColumn="BASIS_TYPE" />
+              <Mapping SourceColumn="RESOURCE_TYPE" DataSetColumn="RESOURCE_TYPE" />
+              <Mapping SourceColumn="COUNT_POINT_TYPE" DataSetColumn="COUNT_POINT_TYPE" />
+              <Mapping SourceColumn="SCHEDULED_FLAG" DataSetColumn="SCHEDULED_FLAG" />
+              <Mapping SourceColumn="REF_SALES_ORDER_HDR" DataSetColumn="REF_SALES_ORDER_HDR" />
+              <Mapping SourceColumn="REF_SALES_ORDER_LINE" DataSetColumn="REF_SALES_ORDER_LINE" />
+              <Mapping SourceColumn="LAST_UPDATE_DATE_JOB" DataSetColumn="LAST_UPDATE_DATE_JOB" />
+              <Mapping SourceColumn="SALES_ORDER_NO" DataSetColumn="SALES_ORDER_NO" />
+              <Mapping SourceColumn="SALES_LINE_NO" DataSetColumn="SALES_LINE_NO" />
+              <Mapping SourceColumn="PARTY_NAME" DataSetColumn="PARTY_NAME" />
+              <Mapping SourceColumn="MRP_DATE" DataSetColumn="MRP_DATE" />
+              <Mapping SourceColumn="FIRST_OPEN_SEQ" DataSetColumn="FIRST_OPEN_SEQ" />
+              <Mapping SourceColumn="QUANTITY_OPEN" DataSetColumn="QUANTITY_OPEN" />
+              <Mapping SourceColumn="HOURS_OPEN" DataSetColumn="HOURS_OPEN" />
+              <Mapping SourceColumn="TEMP" DataSetColumn="TEMP" />
+              <Mapping SourceColumn="CREATED_BY" DataSetColumn="CREATED_BY" />
+              <Mapping SourceColumn="CREATION_DATE" DataSetColumn="CREATION_DATE" />
+              <Mapping SourceColumn="LAST_UPDATED_BY" DataSetColumn="LAST_UPDATED_BY" />
+              <Mapping SourceColumn="LAST_UPDATE_DATE" DataSetColumn="LAST_UPDATE_DATE" />
+              <Mapping SourceColumn="LAST_UPDATE_LOGIN" DataSetColumn="LAST_UPDATE_LOGIN" />
+              <Mapping SourceColumn="lastComment" DataSetColumn="lastComment" />
+              <Mapping SourceColumn="JobNoOperationSeq" DataSetColumn="JobNoOperationSeq" />
+              <Mapping SourceColumn="SalesOrderLine" DataSetColumn="SalesOrderLine" />
+              <Mapping SourceColumn="DRAWING" DataSetColumn="DRAWING" />
+              <Mapping SourceColumn="PROJECT_ID" DataSetColumn="PROJECT_ID" />
+              <Mapping SourceColumn="PROJECT_NUMBER" DataSetColumn="PROJECT_NUMBER" />
+              <Mapping SourceColumn="PROJECT_NAME" DataSetColumn="PROJECT_NAME" />
+              <Mapping SourceColumn="FSG_MATERIAL_CODE" DataSetColumn="FSG_MATERIAL_CODE" />
+              <Mapping SourceColumn="END_DEMAND_ID" DataSetColumn="END_DEMAND_ID" />
+              <Mapping SourceColumn="firstPeggingId" DataSetColumn="firstPeggingId" />
+              <Mapping SourceColumn="qtyAvailable" DataSetColumn="qtyAvailable" />
+              <Mapping SourceColumn="neededBy" DataSetColumn="neededBy" />
+              <Mapping SourceColumn="Usage12Month" DataSetColumn="Usage12Month" />
+              <Mapping SourceColumn="Usage6Month" DataSetColumn="Usage6Month" />
+              <Mapping SourceColumn="Usage3Month" DataSetColumn="Usage3Month" />
+              <Mapping SourceColumn="AverageLast10days" DataSetColumn="AverageLast10days" />
+              <Mapping SourceColumn="QtyTotalDemand" DataSetColumn="QtyTotalDemand" />
+              <Mapping SourceColumn="PLANNER_CODE" DataSetColumn="PLANNER_CODE" />
+              <Mapping SourceColumn="operationSequenceIndicator" DataSetColumn="operationSequenceIndicator" />
+              <Mapping SourceColumn="componentRequirements" DataSetColumn="componentRequirements" />
+              <Mapping SourceColumn="SAFETY_STOCK_QUANTITY" DataSetColumn="SAFETY_STOCK_QUANTITY" />
+              <Mapping SourceColumn="FSG_PRODUCT_CODE" DataSetColumn="FSG_PRODUCT_CODE" />
+              <Mapping SourceColumn="no_of_purchased_shortages" DataSetColumn="no_of_purchased_shortages" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsWIP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsWIP" msprop:Generator_DataSetName="dsWIP" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WIPQueueView" msprop:Generator_UserTableName="WIPQueueView" msprop:Generator_RowDeletedName="WIPQueueViewRowDeleted" msprop:Generator_RowChangedName="WIPQueueViewRowChanged" msprop:Generator_RowClassName="WIPQueueViewRow" msprop:Generator_RowChangingName="WIPQueueViewRowChanging" msprop:Generator_RowEvArgName="WIPQueueViewRowChangeEvent" msprop:Generator_RowEvHandlerName="WIPQueueViewRowChangeEventHandler" msprop:Generator_TableClassName="WIPQueueViewDataTable" msprop:Generator_TableVarName="tableWIPQueueView" msprop:Generator_RowDeletingName="WIPQueueViewRowDeleting" msprop:Generator_TablePropName="WIPQueueView">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORGANIZATION_ID" msprop:Generator_UserColumnName="ORGANIZATION_ID" msprop:Generator_ColumnVarNameInTable="columnORGANIZATION_ID" msprop:Generator_ColumnPropNameInRow="ORGANIZATION_ID" msprop:Generator_ColumnPropNameInTable="ORGANIZATION_IDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="WIP_ENTITY_ID" msprop:Generator_UserColumnName="WIP_ENTITY_ID" msprop:Generator_ColumnVarNameInTable="columnWIP_ENTITY_ID" msprop:Generator_ColumnPropNameInRow="WIP_ENTITY_ID" msprop:Generator_ColumnPropNameInTable="WIP_ENTITY_IDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="JOB_NO" msprop:Generator_UserColumnName="JOB_NO" msprop:Generator_ColumnVarNameInTable="columnJOB_NO" msprop:Generator_ColumnPropNameInRow="JOB_NO" msprop:Generator_ColumnPropNameInTable="JOB_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="240" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OPERATION_SEQ_NO" msprop:Generator_UserColumnName="OPERATION_SEQ_NO" msprop:Generator_ColumnVarNameInTable="columnOPERATION_SEQ_NO" msprop:Generator_ColumnPropNameInRow="OPERATION_SEQ_NO" msprop:Generator_ColumnPropNameInTable="OPERATION_SEQ_NOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="INVENTORY_ITEM_ID" msprop:Generator_UserColumnName="INVENTORY_ITEM_ID" msprop:Generator_ColumnVarNameInTable="columnINVENTORY_ITEM_ID" msprop:Generator_ColumnPropNameInRow="INVENTORY_ITEM_ID" msprop:Generator_ColumnPropNameInTable="INVENTORY_ITEM_IDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ITEM_NO" msprop:Generator_UserColumnName="ITEM_NO" msprop:Generator_ColumnVarNameInTable="columnITEM_NO" msprop:Generator_ColumnPropNameInRow="ITEM_NO" msprop:Generator_ColumnPropNameInTable="ITEM_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESCRIPTION" msprop:Generator_UserColumnName="DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION" msprop:Generator_ColumnPropNameInRow="DESCRIPTION" msprop:Generator_ColumnPropNameInTable="DESCRIPTIONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="240" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATE_RELEASED" msprop:Generator_UserColumnName="DATE_RELEASED" msprop:Generator_ColumnVarNameInTable="columnDATE_RELEASED" msprop:Generator_ColumnPropNameInRow="DATE_RELEASED" msprop:Generator_ColumnPropNameInTable="DATE_RELEASEDColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CLASS_CODE" msprop:Generator_UserColumnName="CLASS_CODE" msprop:Generator_ColumnVarNameInTable="columnCLASS_CODE" msprop:Generator_ColumnPropNameInRow="CLASS_CODE" msprop:Generator_ColumnPropNameInTable="CLASS_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS_TYPE" msprop:Generator_UserColumnName="STATUS_TYPE" msprop:Generator_ColumnVarNameInTable="columnSTATUS_TYPE" msprop:Generator_ColumnPropNameInRow="STATUS_TYPE" msprop:Generator_ColumnPropNameInTable="STATUS_TYPEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="START_QUANTITY_HDR" msprop:Generator_UserColumnName="START_QUANTITY_HDR" msprop:Generator_ColumnVarNameInTable="columnSTART_QUANTITY_HDR" msprop:Generator_ColumnPropNameInRow="START_QUANTITY_HDR" msprop:Generator_ColumnPropNameInTable="START_QUANTITY_HDRColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QUANTITY_COMPLETED_HDR" msprop:Generator_UserColumnName="QUANTITY_COMPLETED_HDR" msprop:Generator_ColumnVarNameInTable="columnQUANTITY_COMPLETED_HDR" msprop:Generator_ColumnPropNameInRow="QUANTITY_COMPLETED_HDR" msprop:Generator_ColumnPropNameInTable="QUANTITY_COMPLETED_HDRColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QUANTITY_SCRAPPED_HDR" msprop:Generator_UserColumnName="QUANTITY_SCRAPPED_HDR" msprop:Generator_ColumnVarNameInTable="columnQUANTITY_SCRAPPED_HDR" msprop:Generator_ColumnPropNameInRow="QUANTITY_SCRAPPED_HDR" msprop:Generator_ColumnPropNameInTable="QUANTITY_SCRAPPED_HDRColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="MEANING" msprop:Generator_UserColumnName="MEANING" msprop:Generator_ColumnVarNameInTable="columnMEANING" msprop:Generator_ColumnPropNameInRow="MEANING" msprop:Generator_ColumnPropNameInTable="MEANINGColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEPARTMENT_ID" msprop:Generator_UserColumnName="DEPARTMENT_ID" msprop:Generator_ColumnVarNameInTable="columnDEPARTMENT_ID" msprop:Generator_ColumnPropNameInRow="DEPARTMENT_ID" msprop:Generator_ColumnPropNameInTable="DEPARTMENT_IDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DEPARTMENT_CODE" msprop:Generator_UserColumnName="DEPARTMENT_CODE" msprop:Generator_ColumnVarNameInTable="columnDEPARTMENT_CODE" msprop:Generator_ColumnPropNameInRow="DEPARTMENT_CODE" msprop:Generator_ColumnPropNameInTable="DEPARTMENT_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESOURCE_ID" msprop:Generator_UserColumnName="RESOURCE_ID" msprop:Generator_ColumnVarNameInTable="columnRESOURCE_ID" msprop:Generator_ColumnPropNameInRow="RESOURCE_ID" msprop:Generator_ColumnPropNameInTable="RESOURCE_IDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="RESOURCE_CODE" msprop:Generator_UserColumnName="RESOURCE_CODE" msprop:Generator_ColumnVarNameInTable="columnRESOURCE_CODE" msprop:Generator_ColumnPropNameInRow="RESOURCE_CODE" msprop:Generator_ColumnPropNameInTable="RESOURCE_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RESOURCE_SEQ_NO" msprop:Generator_UserColumnName="RESOURCE_SEQ_NO" msprop:Generator_ColumnVarNameInTable="columnRESOURCE_SEQ_NO" msprop:Generator_ColumnPropNameInRow="RESOURCE_SEQ_NO" msprop:Generator_ColumnPropNameInTable="RESOURCE_SEQ_NOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DESCRIPTION_OPER" msprop:Generator_UserColumnName="DESCRIPTION_OPER" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION_OPER" msprop:Generator_ColumnPropNameInRow="DESCRIPTION_OPER" msprop:Generator_ColumnPropNameInTable="DESCRIPTION_OPERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="240" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="START_DATE" msprop:Generator_UserColumnName="START_DATE" msprop:Generator_ColumnVarNameInTable="columnSTART_DATE" msprop:Generator_ColumnPropNameInRow="START_DATE" msprop:Generator_ColumnPropNameInTable="START_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COMPLETION_DATE" msprop:Generator_UserColumnName="COMPLETION_DATE" msprop:Generator_ColumnVarNameInTable="columnCOMPLETION_DATE" msprop:Generator_ColumnPropNameInRow="COMPLETION_DATE" msprop:Generator_ColumnPropNameInTable="COMPLETION_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RESOURCE_END_DATE" msprop:Generator_UserColumnName="RESOURCE_END_DATE" msprop:Generator_ColumnVarNameInTable="columnRESOURCE_END_DATE" msprop:Generator_ColumnPropNameInRow="RESOURCE_END_DATE" msprop:Generator_ColumnPropNameInTable="RESOURCE_END_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USAGE_RATE_OR_AMOUNT" msprop:Generator_UserColumnName="USAGE_RATE_OR_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnUSAGE_RATE_OR_AMOUNT" msprop:Generator_ColumnPropNameInRow="USAGE_RATE_OR_AMOUNT" msprop:Generator_ColumnPropNameInTable="USAGE_RATE_OR_AMOUNTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="UOM_CODE" msprop:Generator_UserColumnName="UOM_CODE" msprop:Generator_ColumnVarNameInTable="columnUOM_CODE" msprop:Generator_ColumnPropNameInRow="UOM_CODE" msprop:Generator_ColumnPropNameInTable="UOM_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCHEDULED_QUANTITY" msprop:Generator_UserColumnName="SCHEDULED_QUANTITY" msprop:Generator_ColumnVarNameInTable="columnSCHEDULED_QUANTITY" msprop:Generator_ColumnPropNameInRow="SCHEDULED_QUANTITY" msprop:Generator_ColumnPropNameInTable="SCHEDULED_QUANTITYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QUANTITY_IN_QUEUE" msprop:Generator_UserColumnName="QUANTITY_IN_QUEUE" msprop:Generator_ColumnVarNameInTable="columnQUANTITY_IN_QUEUE" msprop:Generator_ColumnPropNameInRow="QUANTITY_IN_QUEUE" msprop:Generator_ColumnPropNameInTable="QUANTITY_IN_QUEUEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QUANTITY_SCRAPPED" msprop:Generator_UserColumnName="QUANTITY_SCRAPPED" msprop:Generator_ColumnVarNameInTable="columnQUANTITY_SCRAPPED" msprop:Generator_ColumnPropNameInRow="QUANTITY_SCRAPPED" msprop:Generator_ColumnPropNameInTable="QUANTITY_SCRAPPEDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QUANTITY_COMPLETED" msprop:Generator_UserColumnName="QUANTITY_COMPLETED" msprop:Generator_ColumnVarNameInTable="columnQUANTITY_COMPLETED" msprop:Generator_ColumnPropNameInRow="QUANTITY_COMPLETED" msprop:Generator_ColumnPropNameInTable="QUANTITY_COMPLETEDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DATE_LAST_MOVED" msprop:Generator_UserColumnName="DATE_LAST_MOVED" msprop:Generator_ColumnVarNameInTable="columnDATE_LAST_MOVED" msprop:Generator_ColumnPropNameInRow="DATE_LAST_MOVED" msprop:Generator_ColumnPropNameInTable="DATE_LAST_MOVEDColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FIRST_UNIT_START_DATE" msprop:Generator_UserColumnName="FIRST_UNIT_START_DATE" msprop:Generator_ColumnVarNameInTable="columnFIRST_UNIT_START_DATE" msprop:Generator_ColumnPropNameInRow="FIRST_UNIT_START_DATE" msprop:Generator_ColumnPropNameInTable="FIRST_UNIT_START_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LAST_UNIT_COMPLETION_DATE" msprop:Generator_UserColumnName="LAST_UNIT_COMPLETION_DATE" msprop:Generator_ColumnVarNameInTable="columnLAST_UNIT_COMPLETION_DATE" msprop:Generator_ColumnPropNameInRow="LAST_UNIT_COMPLETION_DATE" msprop:Generator_ColumnPropNameInTable="LAST_UNIT_COMPLETION_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PREVIOUS_OPERATION_SEQ_NO" msprop:Generator_UserColumnName="PREVIOUS_OPERATION_SEQ_NO" msprop:Generator_ColumnVarNameInTable="columnPREVIOUS_OPERATION_SEQ_NO" msprop:Generator_ColumnPropNameInRow="PREVIOUS_OPERATION_SEQ_NO" msprop:Generator_ColumnPropNameInTable="PREVIOUS_OPERATION_SEQ_NOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NEXT_OPERATION_SEQ_NO" msprop:Generator_UserColumnName="NEXT_OPERATION_SEQ_NO" msprop:Generator_ColumnVarNameInTable="columnNEXT_OPERATION_SEQ_NO" msprop:Generator_ColumnPropNameInRow="NEXT_OPERATION_SEQ_NO" msprop:Generator_ColumnPropNameInTable="NEXT_OPERATION_SEQ_NOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="BASIS_TYPE" msprop:Generator_UserColumnName="BASIS_TYPE" msprop:Generator_ColumnVarNameInTable="columnBASIS_TYPE" msprop:Generator_ColumnPropNameInRow="BASIS_TYPE" msprop:Generator_ColumnPropNameInTable="BASIS_TYPEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="RESOURCE_TYPE" msprop:Generator_UserColumnName="RESOURCE_TYPE" msprop:Generator_ColumnVarNameInTable="columnRESOURCE_TYPE" msprop:Generator_ColumnPropNameInRow="RESOURCE_TYPE" msprop:Generator_ColumnPropNameInTable="RESOURCE_TYPEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="COUNT_POINT_TYPE" msprop:Generator_UserColumnName="COUNT_POINT_TYPE" msprop:Generator_ColumnVarNameInTable="columnCOUNT_POINT_TYPE" msprop:Generator_ColumnPropNameInRow="COUNT_POINT_TYPE" msprop:Generator_ColumnPropNameInTable="COUNT_POINT_TYPEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="SCHEDULED_FLAG" msprop:Generator_UserColumnName="SCHEDULED_FLAG" msprop:Generator_ColumnVarNameInTable="columnSCHEDULED_FLAG" msprop:Generator_ColumnPropNameInRow="SCHEDULED_FLAG" msprop:Generator_ColumnPropNameInTable="SCHEDULED_FLAGColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="REF_SALES_ORDER_HDR" msprop:Generator_UserColumnName="REF_SALES_ORDER_HDR" msprop:Generator_ColumnVarNameInTable="columnREF_SALES_ORDER_HDR" msprop:Generator_ColumnPropNameInRow="REF_SALES_ORDER_HDR" msprop:Generator_ColumnPropNameInTable="REF_SALES_ORDER_HDRColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REF_SALES_ORDER_LINE" msprop:Generator_UserColumnName="REF_SALES_ORDER_LINE" msprop:Generator_ColumnVarNameInTable="columnREF_SALES_ORDER_LINE" msprop:Generator_ColumnPropNameInRow="REF_SALES_ORDER_LINE" msprop:Generator_ColumnPropNameInTable="REF_SALES_ORDER_LINEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LAST_UPDATE_DATE_JOB" msprop:Generator_UserColumnName="LAST_UPDATE_DATE_JOB" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_DATE_JOB" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_DATE_JOB" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_DATE_JOBColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SALES_ORDER_NO" msprop:Generator_UserColumnName="SALES_ORDER_NO" msprop:Generator_ColumnVarNameInTable="columnSALES_ORDER_NO" msprop:Generator_ColumnPropNameInRow="SALES_ORDER_NO" msprop:Generator_ColumnPropNameInTable="SALES_ORDER_NOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="SALES_LINE_NO" msprop:Generator_UserColumnName="SALES_LINE_NO" msprop:Generator_ColumnVarNameInTable="columnSALES_LINE_NO" msprop:Generator_ColumnPropNameInRow="SALES_LINE_NO" msprop:Generator_ColumnPropNameInTable="SALES_LINE_NOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PARTY_NAME" msprop:Generator_UserColumnName="PARTY_NAME" msprop:Generator_ColumnVarNameInTable="columnPARTY_NAME" msprop:Generator_ColumnPropNameInRow="PARTY_NAME" msprop:Generator_ColumnPropNameInTable="PARTY_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MRP_DATE" msprop:Generator_UserColumnName="MRP_DATE" msprop:Generator_ColumnVarNameInTable="columnMRP_DATE" msprop:Generator_ColumnPropNameInRow="MRP_DATE" msprop:Generator_ColumnPropNameInTable="MRP_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FIRST_OPEN_SEQ" msprop:Generator_UserColumnName="FIRST_OPEN_SEQ" msprop:Generator_ColumnVarNameInTable="columnFIRST_OPEN_SEQ" msprop:Generator_ColumnPropNameInRow="FIRST_OPEN_SEQ" msprop:Generator_ColumnPropNameInTable="FIRST_OPEN_SEQColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QUANTITY_OPEN" msprop:Generator_UserColumnName="QUANTITY_OPEN" msprop:Generator_ColumnVarNameInTable="columnQUANTITY_OPEN" msprop:Generator_ColumnPropNameInRow="QUANTITY_OPEN" msprop:Generator_ColumnPropNameInTable="QUANTITY_OPENColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="HOURS_OPEN" msprop:Generator_UserColumnName="HOURS_OPEN" msprop:Generator_ColumnVarNameInTable="columnHOURS_OPEN" msprop:Generator_ColumnPropNameInRow="HOURS_OPEN" msprop:Generator_ColumnPropNameInTable="HOURS_OPENColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TEMP" msprop:Generator_UserColumnName="TEMP" msprop:Generator_ColumnVarNameInTable="columnTEMP" msprop:Generator_ColumnPropNameInRow="TEMP" msprop:Generator_ColumnPropNameInTable="TEMPColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATED_BY" msprop:Generator_UserColumnName="CREATED_BY" msprop:Generator_ColumnVarNameInTable="columnCREATED_BY" msprop:Generator_ColumnPropNameInRow="CREATED_BY" msprop:Generator_ColumnPropNameInTable="CREATED_BYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CREATION_DATE" msprop:Generator_UserColumnName="CREATION_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATION_DATE" msprop:Generator_ColumnPropNameInRow="CREATION_DATE" msprop:Generator_ColumnPropNameInTable="CREATION_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LAST_UPDATED_BY" msprop:Generator_UserColumnName="LAST_UPDATED_BY" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATED_BY" msprop:Generator_ColumnPropNameInRow="LAST_UPDATED_BY" msprop:Generator_ColumnPropNameInTable="LAST_UPDATED_BYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_DATE" msprop:Generator_UserColumnName="LAST_UPDATE_DATE" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_DATE" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_DATE" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_LOGIN" msprop:Generator_UserColumnName="LAST_UPDATE_LOGIN" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_LOGIN" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_LOGIN" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_LOGINColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="lastComment" msdata:ReadOnly="true" msprop:Generator_UserColumnName="lastComment" msprop:Generator_ColumnVarNameInTable="columnlastComment" msprop:Generator_ColumnPropNameInRow="lastComment" msprop:Generator_ColumnPropNameInTable="lastCommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JobNoOperationSeq" msdata:ReadOnly="true" msprop:Generator_UserColumnName="JobNoOperationSeq" msprop:Generator_ColumnVarNameInTable="columnJobNoOperationSeq" msprop:Generator_ColumnPropNameInRow="JobNoOperationSeq" msprop:Generator_ColumnPropNameInTable="JobNoOperationSeqColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="271" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SalesOrderLine" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SalesOrderLine" msprop:Generator_ColumnVarNameInTable="columnSalesOrderLine" msprop:Generator_ColumnPropNameInRow="SalesOrderLine" msprop:Generator_ColumnPropNameInTable="SalesOrderLineColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="61" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRAWING" msprop:Generator_UserColumnName="DRAWING" msprop:Generator_ColumnVarNameInTable="columnDRAWING" msprop:Generator_ColumnPropNameInRow="DRAWING" msprop:Generator_ColumnPropNameInTable="DRAWINGColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROJECT_ID" msprop:Generator_UserColumnName="PROJECT_ID" msprop:Generator_ColumnVarNameInTable="columnPROJECT_ID" msprop:Generator_ColumnPropNameInRow="PROJECT_ID" msprop:Generator_ColumnPropNameInTable="PROJECT_IDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PROJECT_NUMBER" msprop:Generator_UserColumnName="PROJECT_NUMBER" msprop:Generator_ColumnVarNameInTable="columnPROJECT_NUMBER" msprop:Generator_ColumnPropNameInRow="PROJECT_NUMBER" msprop:Generator_ColumnPropNameInTable="PROJECT_NUMBERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROJECT_NAME" msprop:Generator_UserColumnName="PROJECT_NAME" msprop:Generator_ColumnVarNameInTable="columnPROJECT_NAME" msprop:Generator_ColumnPropNameInRow="PROJECT_NAME" msprop:Generator_ColumnPropNameInTable="PROJECT_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FSG_MATERIAL_CODE" msprop:Generator_UserColumnName="FSG_MATERIAL_CODE" msprop:Generator_ColumnVarNameInTable="columnFSG_MATERIAL_CODE" msprop:Generator_ColumnPropNameInRow="FSG_MATERIAL_CODE" msprop:Generator_ColumnPropNameInTable="FSG_MATERIAL_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="240" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="END_DEMAND_ID" msprop:Generator_UserColumnName="END_DEMAND_ID" msprop:Generator_ColumnVarNameInTable="columnEND_DEMAND_ID" msprop:Generator_ColumnPropNameInRow="END_DEMAND_ID" msprop:Generator_ColumnPropNameInTable="END_DEMAND_IDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="firstPeggingId" msprop:Generator_UserColumnName="firstPeggingId" msprop:Generator_ColumnVarNameInTable="columnfirstPeggingId" msprop:Generator_ColumnPropNameInRow="firstPeggingId" msprop:Generator_ColumnPropNameInTable="firstPeggingIdColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="qtyAvailable" msprop:Generator_UserColumnName="qtyAvailable" msprop:Generator_ColumnVarNameInTable="columnqtyAvailable" msprop:Generator_ColumnPropNameInRow="qtyAvailable" msprop:Generator_ColumnPropNameInTable="qtyAvailableColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="neededBy" msprop:Generator_UserColumnName="neededBy" msprop:Generator_ColumnVarNameInTable="columnneededBy" msprop:Generator_ColumnPropNameInRow="neededBy" msprop:Generator_ColumnPropNameInTable="neededByColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Usage12Month" msprop:Generator_UserColumnName="Usage12Month" msprop:Generator_ColumnVarNameInTable="columnUsage12Month" msprop:Generator_ColumnPropNameInRow="Usage12Month" msprop:Generator_ColumnPropNameInTable="Usage12MonthColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Usage6Month" msprop:Generator_UserColumnName="Usage6Month" msprop:Generator_ColumnVarNameInTable="columnUsage6Month" msprop:Generator_ColumnPropNameInRow="Usage6Month" msprop:Generator_ColumnPropNameInTable="Usage6MonthColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Usage3Month" msprop:Generator_UserColumnName="Usage3Month" msprop:Generator_ColumnVarNameInTable="columnUsage3Month" msprop:Generator_ColumnPropNameInRow="Usage3Month" msprop:Generator_ColumnPropNameInTable="Usage3MonthColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="AverageLast10days" msprop:Generator_UserColumnName="AverageLast10days" msprop:Generator_ColumnVarNameInTable="columnAverageLast10days" msprop:Generator_ColumnPropNameInRow="AverageLast10days" msprop:Generator_ColumnPropNameInTable="AverageLast10daysColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QtyTotalDemand" msprop:Generator_UserColumnName="QtyTotalDemand" msprop:Generator_ColumnVarNameInTable="columnQtyTotalDemand" msprop:Generator_ColumnPropNameInRow="QtyTotalDemand" msprop:Generator_ColumnPropNameInTable="QtyTotalDemandColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PLANNER_CODE" msprop:Generator_UserColumnName="PLANNER_CODE" msprop:Generator_ColumnVarNameInTable="columnPLANNER_CODE" msprop:Generator_ColumnPropNameInRow="PLANNER_CODE" msprop:Generator_ColumnPropNameInTable="PLANNER_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="480" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="operationSequenceIndicator" msprop:Generator_UserColumnName="operationSequenceIndicator" msprop:Generator_ColumnVarNameInTable="columnoperationSequenceIndicator" msprop:Generator_ColumnPropNameInRow="operationSequenceIndicator" msprop:Generator_ColumnPropNameInTable="operationSequenceIndicatorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="componentRequirements" msprop:Generator_UserColumnName="componentRequirements" msprop:Generator_ColumnVarNameInTable="columncomponentRequirements" msprop:Generator_ColumnPropNameInRow="componentRequirements" msprop:Generator_ColumnPropNameInTable="componentRequirementsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SAFETY_STOCK_QUANTITY" msprop:Generator_UserColumnName="SAFETY_STOCK_QUANTITY" msprop:Generator_ColumnVarNameInTable="columnSAFETY_STOCK_QUANTITY" msprop:Generator_ColumnPropNameInRow="SAFETY_STOCK_QUANTITY" msprop:Generator_ColumnPropNameInTable="SAFETY_STOCK_QUANTITYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="FSG_PRODUCT_CODE" msprop:Generator_UserColumnName="FSG_PRODUCT_CODE" msprop:Generator_ColumnVarNameInTable="columnFSG_PRODUCT_CODE" msprop:Generator_ColumnPropNameInRow="FSG_PRODUCT_CODE" msprop:Generator_ColumnPropNameInTable="FSG_PRODUCT_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="240" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="no_of_purchased_shortages" msprop:Generator_UserColumnName="no_of_purchased_shortages" msprop:Generator_ColumnPropNameInRow="no_of_purchased_shortages" msprop:Generator_ColumnVarNameInTable="columnno_of_purchased_shortages" msprop:Generator_ColumnPropNameInTable="no_of_purchased_shortagesColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,167 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="projectManagerWorkbenchSc1Panel1" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="projectManagerWorkbenchSc1Panel2" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="projectManagerWorkbenchSc2Panel1" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="projectManagerWorkbenchSc2Panel2" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="projectManagerWorkebenchSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">1036, 780</Value>
+    </Setting>
+    <Setting Name="projectManagerWorkbenchSc1" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="projectManagerWorkbenchSc2" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="projectManagerWorkbenchSc1SplitterDistance" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">253</Value>
+    </Setting>
+    <Setting Name="projectManagerWorkbenchSc2SplitterDistance" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">225</Value>
+    </Setting>
+    <Setting Name="discussionTrackingSc1Panel1" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="discussionTrackingSc1Panel2" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="discussionTrackingSc2Panel1" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="discussionTrackingSc2Panel2" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="discussionTrackingSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">1036, 780</Value>
+    </Setting>
+    <Setting Name="discussionTrackingSc1" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="discussionTrackingSc2" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="discussionTrackingSc1SplitterDistance" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="discussionTrackingSc2SplitterDistance" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="smtpMailhost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mail.pleugerindustries.com</Value>
+    </Setting>
+    <Setting Name="OracleConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=SR1PROD;User ID=fls_query;Password=st5v8a4v;Unicode=True&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=SR1PROD;User ID=fls_query;Password=st5v8a4v;Unicode=True</Value>
+    </Setting>
+    <Setting Name="prodMachineRecognizeName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">denatbdbp01</Value>
+    </Setting>
+    <Setting Name="OracleConnectionStringTNS" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=(DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = arndb11)(PORT = 1530))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = PROD)
+    )
+  );User ID=fls_query;Password=bQi_l2_Sr0xMMin&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=(DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = arndb11)(PORT = 1530))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = PROD)
+    )
+  );User ID=fls_query;Password=bQi_l2_Sr0xMMin</Value>
+    </Setting>
+    <Setting Name="FLOWConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=denatbdbp01;Initial Catalog=FSG_IND_WORKBENCH;Persist Security Info=True;User ID=WorkBenchUser;Password=WorkBench;TrustServerCertificate=True;User Instance=False;MultiSubnetFailover=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=denatbdbp01;Initial Catalog=FSG_IND_WORKBENCH;Persist Security Info=True;User ID=WorkBenchUser;Password=WorkBench;TrustServerCertificate=True;User Instance=False;MultiSubnetFailover=True</Value>
+    </Setting>
+    <Setting Name="OracleSTARConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;DATA SOURCE=(DESCRIPTION=
+    (ADDRESS_LIST=
+      (FAILOVER=yes)
+      (LOAD_BALANCE=yes)
+      (ADDRESS=
+        (PROTOCOL=TCP)
+        (HOST=gildb806a-vip.flowserve.net)
+        (PORT=1522)
+      )
+      (ADDRESS=
+        (PROTOCOL=TCP)
+        (HOST=gildb806b-vip.flowserve.net)
+        (PORT=1522)
+      )
+    )
+    (CONNECT_DATA=
+      (SERVICE_NAME=sr1prod.flowserve.net)
+    )
+  );PASSWORD=st5v8a4v;USER ID=FLS_QUERY&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Oracle.DataAccess.Client&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">DATA SOURCE=(DESCRIPTION=
+    (ADDRESS_LIST=
+      (FAILOVER=yes)
+      (LOAD_BALANCE=yes)
+      (ADDRESS=
+        (PROTOCOL=TCP)
+        (HOST=gildb806a-vip.flowserve.net)
+        (PORT=1522)
+      )
+      (ADDRESS=
+        (PROTOCOL=TCP)
+        (HOST=gildb806b-vip.flowserve.net)
+        (PORT=1522)
+      )
+    )
+    (CONNECT_DATA=
+      (SERVICE_NAME=sr1prod.flowserve.net)
+    )
+  );PASSWORD=st5v8a4v;USER ID=FLS_QUERY</Value>
+    </Setting>
+    <Setting Name="OracleEDCConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=          
+        (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=londb701.flowserve.net)(PORT=1522))
+            (CONNECT_DATA=
+                (SID=ip1prod)
+            )
+        )
+  ;User ID=fls_query;Password=THa3eVes&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=          
+        (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=londb701.flowserve.net)(PORT=1522))
+            (CONNECT_DATA=
+                (SID=ip1prod)
+            )
+        )
+  ;User ID=fls_query;Password=THa3eVes</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

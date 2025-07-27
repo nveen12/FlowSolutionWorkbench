@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsOrderShippingPO" targetNamespace="http://tempuri.org/dsOrderShippingPO.xsd" xmlns:mstns="http://tempuri.org/dsOrderShippingPO.xsd" xmlns="http://tempuri.org/dsOrderShippingPO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="FLOWConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FLOWConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Flow_Solution_Workbenches.My.MySettings.GlobalReference.Default.FLOWConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FLOWConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT 
+NULL po_no
+,NULL line_no
+, NULL item_id
+, NULL type_lookup_code
+, NULL item_description
+, NULL quantity_ordered
+, NULL qty_received
+, NULL printed_date 
+, NULL vendor_name
+, NULL country
+, NULL running_count_poLines
+, NULL item_no
+FROM sales_orders</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="po_no" DataSetColumn="po_no" />
+              <Mapping SourceColumn="line_no" DataSetColumn="line_no" />
+              <Mapping SourceColumn="item_id" DataSetColumn="item_id" />
+              <Mapping SourceColumn="type_lookup_code" DataSetColumn="type_lookup_code" />
+              <Mapping SourceColumn="item_description" DataSetColumn="item_description" />
+              <Mapping SourceColumn="quantity_ordered" DataSetColumn="quantity_ordered" />
+              <Mapping SourceColumn="qty_received" DataSetColumn="qty_received" />
+              <Mapping SourceColumn="printed_date" DataSetColumn="printed_date" />
+              <Mapping SourceColumn="vendor_name" DataSetColumn="vendor_name" />
+              <Mapping SourceColumn="country" DataSetColumn="country" />
+              <Mapping SourceColumn="running_count_poLines" DataSetColumn="running_count_poLines" />
+              <Mapping SourceColumn="item_no" DataSetColumn="item_no" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsOrderShippingPO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsOrderShippingPO" msprop:Generator_DataSetName="dsOrderShippingPO" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="po_no" msdata:ReadOnly="true" msprop:Generator_UserColumnName="po_no" msprop:Generator_ColumnVarNameInTable="columnpo_no" msprop:Generator_ColumnPropNameInRow="po_no" msprop:Generator_ColumnPropNameInTable="po_noColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="line_no" msdata:ReadOnly="true" msprop:Generator_UserColumnName="line_no" msprop:Generator_ColumnVarNameInTable="columnline_no" msprop:Generator_ColumnPropNameInRow="line_no" msprop:Generator_ColumnPropNameInTable="line_noColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="item_id" msdata:ReadOnly="true" msprop:Generator_UserColumnName="item_id" msprop:Generator_ColumnVarNameInTable="columnitem_id" msprop:Generator_ColumnPropNameInRow="item_id" msprop:Generator_ColumnPropNameInTable="item_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="type_lookup_code" msdata:ReadOnly="true" msprop:Generator_UserColumnName="type_lookup_code" msprop:Generator_ColumnVarNameInTable="columntype_lookup_code" msprop:Generator_ColumnPropNameInRow="type_lookup_code" msprop:Generator_ColumnPropNameInTable="type_lookup_codeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="item_description" msdata:ReadOnly="true" msprop:Generator_UserColumnName="item_description" msprop:Generator_ColumnVarNameInTable="columnitem_description" msprop:Generator_ColumnPropNameInRow="item_description" msprop:Generator_ColumnPropNameInTable="item_descriptionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="quantity_ordered" msdata:ReadOnly="true" msprop:Generator_UserColumnName="quantity_ordered" msprop:Generator_ColumnVarNameInTable="columnquantity_ordered" msprop:Generator_ColumnPropNameInRow="quantity_ordered" msprop:Generator_ColumnPropNameInTable="quantity_orderedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="qty_received" msdata:ReadOnly="true" msprop:Generator_UserColumnName="qty_received" msprop:Generator_ColumnVarNameInTable="columnqty_received" msprop:Generator_ColumnPropNameInRow="qty_received" msprop:Generator_ColumnPropNameInTable="qty_receivedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="printed_date" msdata:ReadOnly="true" msprop:Generator_UserColumnName="printed_date" msprop:Generator_ColumnVarNameInTable="columnprinted_date" msprop:Generator_ColumnPropNameInRow="printed_date" msprop:Generator_ColumnPropNameInTable="printed_dateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="vendor_name" msdata:ReadOnly="true" msprop:Generator_UserColumnName="vendor_name" msprop:Generator_ColumnVarNameInTable="columnvendor_name" msprop:Generator_ColumnPropNameInRow="vendor_name" msprop:Generator_ColumnPropNameInTable="vendor_nameColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="country" msdata:ReadOnly="true" msprop:Generator_UserColumnName="country" msprop:Generator_ColumnVarNameInTable="columncountry" msprop:Generator_ColumnPropNameInRow="country" msprop:Generator_ColumnPropNameInTable="countryColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="running_count_poLines" msdata:ReadOnly="true" msprop:Generator_UserColumnName="running_count_poLines" msprop:Generator_ColumnVarNameInTable="columnrunning_count_poLines" msprop:Generator_ColumnPropNameInRow="running_count_poLines" msprop:Generator_ColumnPropNameInTable="running_count_poLinesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="item_no" msdata:ReadOnly="true" msprop:Generator_UserColumnName="item_no" msprop:Generator_ColumnPropNameInRow="item_no" msprop:Generator_ColumnVarNameInTable="columnitem_no" msprop:Generator_ColumnPropNameInTable="item_noColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

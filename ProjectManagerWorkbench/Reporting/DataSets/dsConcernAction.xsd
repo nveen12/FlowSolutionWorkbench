@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsConcernAction" targetNamespace="http://tempuri.org/dsConcernAction.xsd" xmlns:mstns="http://tempuri.org/dsConcernAction.xsd" xmlns="http://tempuri.org/dsConcernAction.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="FLOWConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FLOWConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Flow_Solution_Workbenches.My.MySettings.GlobalReference.Default.FLOWConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="whUserNotificationsViewTableAdapter" GeneratorDataComponentClassName="whUserNotificationsViewTableAdapter" Name="whUserNotificationsView" UserDataComponentName="whUserNotificationsViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FLOWConnectionString (MySettings)" DbObjectName="FSG_IND_WORKBENCH.dbo.whUserNotificationsView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [notificationId]
+      ,[createdBy]
+      ,[notificationEntity]
+      ,[creationDate]
+      ,[headerID]
+      ,[lineID]
+      ,[reviewed]
+      ,[DESCRIPTION]
+      ,[notificationTo]
+      ,[commentId]
+      ,[organizationID]
+      ,[organizationName]
+      ,[headerName]
+      ,[SHIPMENT_NO]
+      ,[description2]
+      ,[dueDate]
+      ,[closed]
+      ,[closedDate]
+      ,[assignment]
+      , [DESCRIPTION]  ImgPath
+  FROM  [whUserNotificationsView]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="notificationId" DataSetColumn="notificationId" />
+              <Mapping SourceColumn="createdBy" DataSetColumn="createdBy" />
+              <Mapping SourceColumn="notificationEntity" DataSetColumn="notificationEntity" />
+              <Mapping SourceColumn="creationDate" DataSetColumn="creationDate" />
+              <Mapping SourceColumn="headerID" DataSetColumn="headerID" />
+              <Mapping SourceColumn="lineID" DataSetColumn="lineID" />
+              <Mapping SourceColumn="reviewed" DataSetColumn="reviewed" />
+              <Mapping SourceColumn="DESCRIPTION" DataSetColumn="DESCRIPTION" />
+              <Mapping SourceColumn="notificationTo" DataSetColumn="notificationTo" />
+              <Mapping SourceColumn="commentId" DataSetColumn="commentId" />
+              <Mapping SourceColumn="organizationID" DataSetColumn="organizationID" />
+              <Mapping SourceColumn="organizationName" DataSetColumn="organizationName" />
+              <Mapping SourceColumn="headerName" DataSetColumn="headerName" />
+              <Mapping SourceColumn="SHIPMENT_NO" DataSetColumn="SHIPMENT_NO" />
+              <Mapping SourceColumn="description2" DataSetColumn="description2" />
+              <Mapping SourceColumn="dueDate" DataSetColumn="dueDate" />
+              <Mapping SourceColumn="closed" DataSetColumn="closed" />
+              <Mapping SourceColumn="closedDate" DataSetColumn="closedDate" />
+              <Mapping SourceColumn="assignment" DataSetColumn="assignment" />
+              <Mapping SourceColumn="ImgPath" DataSetColumn="ImgPath" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsConcernAction" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsConcernAction" msprop:Generator_DataSetName="dsConcernAction" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="whUserNotificationsView" msprop:Generator_UserTableName="whUserNotificationsView" msprop:Generator_RowDeletedName="whUserNotificationsViewRowDeleted" msprop:Generator_RowChangedName="whUserNotificationsViewRowChanged" msprop:Generator_RowClassName="whUserNotificationsViewRow" msprop:Generator_RowChangingName="whUserNotificationsViewRowChanging" msprop:Generator_RowEvArgName="whUserNotificationsViewRowChangeEvent" msprop:Generator_RowEvHandlerName="whUserNotificationsViewRowChangeEventHandler" msprop:Generator_TableClassName="whUserNotificationsViewDataTable" msprop:Generator_TableVarName="tablewhUserNotificationsView" msprop:Generator_RowDeletingName="whUserNotificationsViewRowDeleting" msprop:Generator_TablePropName="whUserNotificationsView">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="notificationId" msprop:Generator_UserColumnName="notificationId" msprop:Generator_ColumnVarNameInTable="columnnotificationId" msprop:Generator_ColumnPropNameInRow="notificationId" msprop:Generator_ColumnPropNameInTable="notificationIdColumn" type="xs:long" />
+              <xs:element name="createdBy" msprop:Generator_UserColumnName="createdBy" msprop:Generator_ColumnVarNameInTable="columncreatedBy" msprop:Generator_ColumnPropNameInRow="createdBy" msprop:Generator_ColumnPropNameInTable="createdByColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="notificationEntity" msprop:Generator_UserColumnName="notificationEntity" msprop:Generator_ColumnVarNameInTable="columnnotificationEntity" msprop:Generator_ColumnPropNameInRow="notificationEntity" msprop:Generator_ColumnPropNameInTable="notificationEntityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="creationDate" msprop:Generator_UserColumnName="creationDate" msprop:Generator_ColumnVarNameInTable="columncreationDate" msprop:Generator_ColumnPropNameInRow="creationDate" msprop:Generator_ColumnPropNameInTable="creationDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="headerID" msprop:Generator_UserColumnName="headerID" msprop:Generator_ColumnVarNameInTable="columnheaderID" msprop:Generator_ColumnPropNameInRow="headerID" msprop:Generator_ColumnPropNameInTable="headerIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="lineID" msprop:Generator_UserColumnName="lineID" msprop:Generator_ColumnVarNameInTable="columnlineID" msprop:Generator_ColumnPropNameInRow="lineID" msprop:Generator_ColumnPropNameInTable="lineIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="reviewed" msprop:Generator_UserColumnName="reviewed" msprop:Generator_ColumnVarNameInTable="columnreviewed" msprop:Generator_ColumnPropNameInRow="reviewed" msprop:Generator_ColumnPropNameInTable="reviewedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DESCRIPTION" msprop:Generator_UserColumnName="DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION" msprop:Generator_ColumnPropNameInRow="DESCRIPTION" msprop:Generator_ColumnPropNameInTable="DESCRIPTIONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="notificationTo" msprop:Generator_UserColumnName="notificationTo" msprop:Generator_ColumnVarNameInTable="columnnotificationTo" msprop:Generator_ColumnPropNameInRow="notificationTo" msprop:Generator_ColumnPropNameInTable="notificationToColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="commentId" msprop:Generator_UserColumnName="commentId" msprop:Generator_ColumnVarNameInTable="columncommentId" msprop:Generator_ColumnPropNameInRow="commentId" msprop:Generator_ColumnPropNameInTable="commentIdColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="organizationID" msprop:Generator_UserColumnName="organizationID" msprop:Generator_ColumnVarNameInTable="columnorganizationID" msprop:Generator_ColumnPropNameInRow="organizationID" msprop:Generator_ColumnPropNameInTable="organizationIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="organizationName" msprop:Generator_UserColumnName="organizationName" msprop:Generator_ColumnVarNameInTable="columnorganizationName" msprop:Generator_ColumnPropNameInRow="organizationName" msprop:Generator_ColumnPropNameInTable="organizationNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="headerName" msprop:Generator_UserColumnName="headerName" msprop:Generator_ColumnVarNameInTable="columnheaderName" msprop:Generator_ColumnPropNameInRow="headerName" msprop:Generator_ColumnPropNameInTable="headerNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SHIPMENT_NO" msprop:Generator_UserColumnName="SHIPMENT_NO" msprop:Generator_ColumnVarNameInTable="columnSHIPMENT_NO" msprop:Generator_ColumnPropNameInRow="SHIPMENT_NO" msprop:Generator_ColumnPropNameInTable="SHIPMENT_NOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="description2" msprop:Generator_UserColumnName="description2" msprop:Generator_ColumnVarNameInTable="columndescription2" msprop:Generator_ColumnPropNameInRow="description2" msprop:Generator_ColumnPropNameInTable="description2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dueDate" msprop:Generator_UserColumnName="dueDate" msprop:Generator_ColumnVarNameInTable="columndueDate" msprop:Generator_ColumnPropNameInRow="dueDate" msprop:Generator_ColumnPropNameInTable="dueDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="closed" msprop:Generator_UserColumnName="closed" msprop:Generator_ColumnVarNameInTable="columnclosed" msprop:Generator_ColumnPropNameInRow="closed" msprop:Generator_ColumnPropNameInTable="closedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="closedDate" msprop:Generator_UserColumnName="closedDate" msprop:Generator_ColumnVarNameInTable="columnclosedDate" msprop:Generator_ColumnPropNameInRow="closedDate" msprop:Generator_ColumnPropNameInTable="closedDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="assignment" msprop:Generator_UserColumnName="assignment" msprop:Generator_ColumnVarNameInTable="columnassignment" msprop:Generator_ColumnPropNameInRow="assignment" msprop:Generator_ColumnPropNameInTable="assignmentColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ImgPath" msprop:Generator_UserColumnName="ImgPath" msprop:Generator_ColumnPropNameInRow="ImgPath" msprop:Generator_ColumnVarNameInTable="columnImgPath" msprop:Generator_ColumnPropNameInTable="ImgPathColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:whUserNotificationsView" />
+      <xs:field xpath="mstns:notificationId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
