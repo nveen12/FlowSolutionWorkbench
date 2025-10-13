@@ -62,9 +62,9 @@
     <Setting Name="OracleConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=SR1PROD;User ID=fls_query;Password=st5v8a4v;Unicode=True&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=LOCAL_ORACLE;User ID=demo;Password=demo;Unicode=True&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=SR1PROD;User ID=fls_query;Password=st5v8a4v;Unicode=True</Value>
+      <Value Profile="(Default)">Data Source=LOCAL_ORACLE;User ID=demo;Password=demo;Unicode=True</Value>
     </Setting>
     <Setting Name="prodMachineRecognizeName" Type="System.String" Scope="Application">
       <Value Profile="(Default)">denatbdbp01</Value>
@@ -74,94 +74,80 @@
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;ConnectionString&gt;Data Source=(DESCRIPTION =
     (ADDRESS_LIST =
-      (ADDRESS = (PROTOCOL = TCP)(HOST = arndb11)(PORT = 1530))
+      (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
     )
     (CONNECT_DATA =
-      (SERVICE_NAME = PROD)
+      (SERVICE_NAME = DEMO)
     )
-  );User ID=fls_query;Password=bQi_l2_Sr0xMMin&lt;/ConnectionString&gt;
+  );User ID=demo;Password=demo&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=(DESCRIPTION =
     (ADDRESS_LIST =
-      (ADDRESS = (PROTOCOL = TCP)(HOST = arndb11)(PORT = 1530))
+      (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
     )
     (CONNECT_DATA =
-      (SERVICE_NAME = PROD)
+      (SERVICE_NAME = DEMO)
     )
-  );User ID=fls_query;Password=bQi_l2_Sr0xMMin</Value>
+  );User ID=demo;Password=demo</Value>
     </Setting>
     <Setting Name="FLOWConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=denatbdbp01;Initial Catalog=FSG_IND_WORKBENCH;Persist Security Info=True;User ID=WorkBenchUser;Password=WorkBench;TrustServerCertificate=True;User Instance=False;MultiSubnetFailover=True&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=(localdb)\FlowWorkbenchLocal;Initial Catalog=FlowWorkbenchLocal;Integrated Security=True&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=denatbdbp01;Initial Catalog=FSG_IND_WORKBENCH;Persist Security Info=True;User ID=WorkBenchUser;Password=WorkBench;TrustServerCertificate=True;User Instance=False;MultiSubnetFailover=True</Value>
+      <Value Profile="(Default)">Data Source=(localdb)\FlowWorkbenchLocal;Initial Catalog=FlowWorkbenchLocal;Integrated Security=True</Value>
     </Setting>
     <Setting Name="OracleSTARConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;ConnectionString&gt;DATA SOURCE=(DESCRIPTION=
     (ADDRESS_LIST=
-      (FAILOVER=yes)
-      (LOAD_BALANCE=yes)
       (ADDRESS=
         (PROTOCOL=TCP)
-        (HOST=gildb806a-vip.flowserve.net)
-        (PORT=1522)
-      )
-      (ADDRESS=
-        (PROTOCOL=TCP)
-        (HOST=gildb806b-vip.flowserve.net)
-        (PORT=1522)
+        (HOST=localhost)
+        (PORT=1521)
       )
     )
     (CONNECT_DATA=
-      (SERVICE_NAME=sr1prod.flowserve.net)
+      (SERVICE_NAME=DEMO)
     )
-  );PASSWORD=st5v8a4v;USER ID=FLS_QUERY&lt;/ConnectionString&gt;
+  );PASSWORD=demo;USER ID=DEMO&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;Oracle.DataAccess.Client&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">DATA SOURCE=(DESCRIPTION=
     (ADDRESS_LIST=
-      (FAILOVER=yes)
-      (LOAD_BALANCE=yes)
       (ADDRESS=
         (PROTOCOL=TCP)
-        (HOST=gildb806a-vip.flowserve.net)
-        (PORT=1522)
-      )
-      (ADDRESS=
-        (PROTOCOL=TCP)
-        (HOST=gildb806b-vip.flowserve.net)
-        (PORT=1522)
+        (HOST=localhost)
+        (PORT=1521)
       )
     )
     (CONNECT_DATA=
-      (SERVICE_NAME=sr1prod.flowserve.net)
+      (SERVICE_NAME=DEMO)
     )
-  );PASSWORD=st5v8a4v;USER ID=FLS_QUERY</Value>
+  );PASSWORD=demo;USER ID=DEMO</Value>
     </Setting>
     <Setting Name="OracleEDCConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=          
+  &lt;ConnectionString&gt;Data Source=
         (DESCRIPTION=
-                (ADDRESS=(PROTOCOL=tcp)(HOST=londb701.flowserve.net)(PORT=1522))
+                (ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521))
             (CONNECT_DATA=
-                (SID=ip1prod)
+                (SID=DEMO)
             )
         )
-  ;User ID=fls_query;Password=THa3eVes&lt;/ConnectionString&gt;
+  ;User ID=demo;Password=demo&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=          
+      <Value Profile="(Default)">Data Source=
         (DESCRIPTION=
-                (ADDRESS=(PROTOCOL=tcp)(HOST=londb701.flowserve.net)(PORT=1522))
+                (ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521))
             (CONNECT_DATA=
-                (SID=ip1prod)
+                (SID=DEMO)
             )
         )
-  ;User ID=fls_query;Password=THa3eVes</Value>
+  ;User ID=demo;Password=demo</Value>
     </Setting>
   </Settings>
 </SettingsFile>
